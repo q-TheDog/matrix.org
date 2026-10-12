@@ -1,0 +1,29 @@
+[[bridges]]
+name = "matrix-appservice-atproto"
+maintainer = "Haven"
+summary = """
+Turns your Matrix server into a real Bluesky server. Every linked Profile Room gets its own genuine
+Bluesky account, hosted by the bridge itself as its own Personal Data Server, so Matrix users can post,
+reply, like, repost, quote, and chat on Bluesky with no separate account needed. Written in Python.
+"""
+maturity = "Beta"
+language = "Python"
+license = "GPL-3.0-or-later"
+docs = "https://github.com/Haven-Organization/matrix-appservice-atproto/blob/main/INSTALL.md"
+repo = "https://github.com/Haven-Organization/matrix-appservice-atproto"
+featured = false # left to the website maintainers, per CONTENT.md
+privilege.platform = "" # Free text
+privilege.matrix = "Homeserver Admin" # Any of Homeserver Admin, Room Admin, None
+[bridges.supports]
+direct_messages = true
+message_media = true
+mentions = true
+replies = true
+threads = true
+quotes = true
+redactions = true
+editing = false
+reactions = true
+presence = false
+typing_notifications = false
+read_receipts = false
